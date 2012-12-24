@@ -4,6 +4,8 @@ source :rubygems
 # gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
 
+gem 'capistrano', '~> 2.13.5'
+
 # Project requirements
 gem 'rake'
 gem 'sinatra-flash', :require => 'sinatra/flash'
