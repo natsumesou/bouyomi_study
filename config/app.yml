@@ -10,5 +10,4 @@ test:
   <<: *defaults
 
 production:
-  bouyomi:
-    base_dir: "/home/natsumesou/Dropbox"
+  <<: *defaults

@@ -49,7 +49,11 @@ class Bouyomi < Padrino::Application
   #
 
   error 404 do
-    render :erb, 'errors/404', layout: "/layouts/index"
+    render :erb, '/errors/404'.to_sym, layout: "/layouts/index"
+  end
+
+  error do
+    render :erb, '/errors/5xx'.to_sym, layout: "/layouts/index"
   end
 
   #
