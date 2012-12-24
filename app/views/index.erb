@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="twelve columns">
+    <h2>棒読みちゃん教育一覧</h2>
+    <p>現在表示されているのは <%= study_list[:updated].strftime('%Y/%m/%d %H:%M') %> に更新されたものです</p>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="eight columns">
+    <table class="responsive">
+      <caption>
+        <details>
+        <summary>棒読みちゃんに登録されている教育一覧</summary>
+        </details>
+      </caption>
+      <thead>
+        <tr>
+          <th>単語</th><th>読み</th>
+        </tr>
+      </thead>
+      <% study_list[:list].each do |study| %>
+      <tr><td><%= study[:word] %></td><td><%= study[:reading] %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+    <div class="four columns">
+      <h4><a href="http://com.nicovideo.jp/community/co1637304"><img src="http://icon.nimg.jp/community/163/co1637304.jpg"></a></h4>
+      <p>(^_^)v</p>
+    </div>
+</div>

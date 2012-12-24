@@ -1,0 +1,14 @@
+defaults: &defaults
+  bouyomi:
+    base_dir: "/Users/yoshiakinatsume/Dropbox"
+
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  bouyomi:
+    base_dir: "/home/natsumesou/Dropbox"

@@ -26,9 +26,7 @@
 # override these settings in the subapps as needed.
 #
 Padrino.configure_apps do
-  # enable :sessions
-  set :session_secret, 'aa46ed4aabc288adab3d600f851f99de9c91405f34f7deb6a3b641e08e45cc9a'
 end
 
 # Mounts the core application for this project
-Padrino.mount("Hoge").to('/')
+Padrino.mount("Bouyomi").to('/')

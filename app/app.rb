@@ -1,9 +1,8 @@
-class Hoge < Padrino::Application
+class Bouyomi < Padrino::Application
   register Padrino::Rendering
-  register Padrino::Mailer
   register Padrino::Helpers
 
-  enable :sessions
+  set :raise_errors, true
 
   ##
   # Caching support
@@ -48,9 +47,11 @@ class Hoge < Padrino::Application
   ##
   # You can manage errors like:
   #
-  #   error 404 do
-  #     render 'errors/404'
-  #   end
+
+  error 404 do
+    render :erb, 'errors/404', layout: "/layouts/index"
+  end
+
   #
   #   error 505 do
   #     render 'errors/505'
